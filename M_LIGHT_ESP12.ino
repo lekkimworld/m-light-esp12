@@ -3,15 +3,15 @@
 #include <EEPROM.h>
 #include <ESP8266mDNS.h>
 
-#define DELAY_TURNOFF_AP 300000L        // delay after restart before turning off access point, in milliseconds
+#define DELAY_TURNOFF_AP 60000L        // delay after restart before turning off access point, in milliseconds
 #define PIN_RED 14
 #define PIN_GREEN 4
 #define PIN_BLUE 12
 #define PWM_MAX 1024
 #define CONFIG_VERSION 1
 
-#define VERSION_NUMBER "20200126T1642"
-#define VERSION_LASTCHANGE "Added yield"
+#define VERSION_NUMBER "20200202T1535"
+#define VERSION_LASTCHANGE "Auto-turn off wifi"
 
 ESP8266WebServer server(80);
 
